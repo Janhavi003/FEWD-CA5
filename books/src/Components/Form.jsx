@@ -28,6 +28,7 @@ function Form() {
                     <p>Registration Successful</p>
                 </div>
             )}
+            <h1>Create Account</h1>
             {/* Form */}
             <form className='Form' onSubmit={handleSubmit(onSubmit)} onChange={handleFormChange}>
                 {/* Name input */}
@@ -58,9 +59,9 @@ function Form() {
                         value: /^(?=.*[!@#$%^&*])\w+\S+/,
                         message: "Password must contain at least one special character "
                     },
-                    maxLength: {
+                    minLength: {
                         value: 10,
-                        message: "Password cannot be more than 10 characters"
+                        message: "Password cannot be less than 10 characters"
                     }
                 })} />
                 {errors.password && (<p className='err'>{errors.password.message}</p>)}
