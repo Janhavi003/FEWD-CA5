@@ -12,7 +12,8 @@ function Form() {
     const [isFormEdited, setIsFormEdited] = useState(false);
 
     // Function to handle form submission
-    const onSubmit = () => {
+    const onSubmit = (data) => {
+        console.log(data);
         setRegisterSuccessful(true);
     };
 
