@@ -17,6 +17,8 @@ body{
 }
 
 .Name {
+  border-style: none;
+  background-color: #ffffff;
   font-size: 24px;
   color: #ff0000;
   margin-left:5vw;

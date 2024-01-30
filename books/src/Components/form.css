@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Poppins:wght@300&display=swap');
 
+.nameBtn{
+  height:3vw;
+  width:15vw;
+  color:red;
+  font-size:24px;
+  cursor: pointer;
+ font-weight: 550;
+ margin:1vw;
+ background-color:#000000 ;
+ border-style: none;
+ border:3px solid #4b4a4a;
+}
 .content {
     width:35vw;
     margin: 2vw auto 1vw auto;

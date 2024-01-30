@@ -44,7 +44,7 @@ function Books() {
   return (
     <div className="main">
       <div className="navbar">
-        <h2 className="Name">Kalvium Books</h2>
+        <button className="Name">Kalvium Books</button>
         <input
           type="text"
           placeholder="Search Book"

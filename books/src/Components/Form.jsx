@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import {Link} from 'react-router-dom';
 import './form.css';
-import { Link } from 'react-router-dom';
 
 function Form() {
     // Destructuring form elements from react-hook-form
@@ -23,10 +23,8 @@ function Form() {
 
     return (
         <div className='Main'>
-            <Link to = '/'>
-            <div className="navbar">
-            <h2 className="Name">Kalvium Books</h2>
-            </div>
+            <Link to='/'>
+            <button className="nameBtn">Kalvium Books</button>    
             </Link>
             <div className="content">
             {/* Conditional rendering for successful registration */}
@@ -86,7 +84,7 @@ function Form() {
                 {errors.confirmPassword && <p className="err">{errors.confirmPassword.message}</p>}
                 
                 {/* Submit button */}
-                <button id='btn' type="submit" disabled={!isFormEdited}>Sign-Up</button>
+                <button id='btn' type="submit" disabled={!isFormEdited}>Sign Up</button>
             </form>
             </div>
         </div>
