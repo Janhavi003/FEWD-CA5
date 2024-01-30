@@ -47,10 +47,10 @@ function Books() {
         <h2 className="Name">Kalvium Books</h2>
         <input
           type="text"
-          placeholder="Enter the book name"
+          placeholder="Search Book"
           list="suggestions"
           onChange={handleInputChange}
-          value={searchText} // Add value attribute
+          value={searchText} 
           className="BookInp"
         />
         <Link to="/form">

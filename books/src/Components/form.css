@@ -1,17 +1,21 @@
-.Main {
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Poppins:wght@300&display=swap');
+
+.content {
     width:35vw;
-    height:75vh;
-    margin: 3vw auto;
-    padding: 20px;
-   background-color:#bbd4ee;
+    margin: 2vw auto 1vw auto;
+    padding: 1.5vw;
+    background:linear-gradient(rgb(49, 49, 49),rgb(0, 0, 0)) ;
+    color:white;
+    font-family: 'Pompiere', sans-serif;
+    border: 1px solid white
 }
   .success {
     background-color: #d4edda;
-    color: #155724;
+    color: #33a14c;
     border: 1px solid #c3e6cb;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
+    padding: 0.25vw;
+    margin-bottom: 1vw;
+    font-size: 25px;
     font-weight: 500;
   }
   .Form {
@@ -19,42 +23,46 @@
     display: flex;
     flex-direction: column;
   }
+  .title{
+    text-align: center;
+    font-size:45px;
+  }
   label {
     margin-top:1vw;
-    margin-bottom: 5px;
+    margin-bottom: 0.50vw;
   }
   input[type="text"],
   input[type="email"],
   input[type="password"] {
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 1vw;
+    margin-bottom: 1vw;
     border: 1px solid #ced4da;
     border-radius: 5px;
   }
   .err {
-    color: #dc3545;
-    margin-top: 5px;
+    color: #ff0019;
+    margin-top: 0.50vw;
   }
-  button[type="submit"] {
+  #btn[type="submit"] {
     width:10vw;
     margin-top:3vw;
-    padding: 10px ;
+    padding: 1vw ;
     margin-left:12vw;
-    background-color: #007914e4;
-    box-shadow: 2px 2px 3px #000000;
+    background-color: #009a1ae4;
+    box-shadow: 2px 2px 3px #3b3b3b;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
-  button[type="submit"]:disabled {
+  #btn[type="submit"]:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   }
-  button[type="submit"]:hover{
-    background-color: #038418e4 ;
+  #btn[type="submit"]:hover{
+    background-color: #01b51fe4 ;
   }
-  button[type="submit"]:active{
-    background-color: #019a1ae4 ;
+  #btn[type="submit"]:active{
+    background-color: #01d024e4 ;
   }
   /* ~~ Form Styling ends here ~~ */
